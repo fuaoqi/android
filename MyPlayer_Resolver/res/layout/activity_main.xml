@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+	<TextView
+	    android:id="@+id/title"
+	    android:layout_width="match_parent"
+	    android:textColor="@android:color/white"
+	    android:textSize="25sp"
+	    android:text="title"
+	    android:gravity="center_horizontal"
+	    android:layout_height="37dp" />
+
+	<FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></FrameLayout>
+
+	<RadioGroup
+	    android:id="@+id/rg_tab"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:background="@drawable/bg_weibo_listab">
+
+	    <RadioButton
+	        style="@style/weibo_tab"
+	        android:drawableTop="@drawable/weibolist_attention_selector"
+	        android:text="本地歌曲"
+	        />
+	    <RadioButton
+	        style="@style/weibo_tab"
+	        android:drawableTop="@drawable/weibolist_comment_selector" 
+	        android:text="在线音乐"/>
+	    <RadioButton
+	        style="@style/weibo_tab"
+	        android:drawableTop="@drawable/weibolist_mylist_selector"
+	        android:text="排行榜"/>
+	    <RadioButton
+	        style="@style/weibo_tab"
+	         android:drawableTop="@drawable/weibolist_global_selector" 
+	        android:text="设置"/>
+	</RadioGroup>
+</LinearLayout>
